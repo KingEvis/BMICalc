@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-6 mt-5">
+      <div class="card">
+        <div class="card-header">BMI Skaičiuoklė</div>
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="height" class="form-label">Ūgis (cm):</label>
+            <input id="height" class="form-control" type="number" [(ngModel)]="height" placeholder="Įveskite ūgį">
+          </div>
+          <div class="mb-3">
+            <label for="weight" class="form-label">Svoris (kg):</label>
+            <input id="weight" class="form-control" type="number" [(ngModel)]="weight" placeholder="Įveskite svorį">
+          </div>
+  
+          <button class="btn btn-success" (click)="calculateBMI()">Skaičiuoti KMI</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 mt-5">
+      <div class="card">
+        <div class="card-header">Rezultatas</div>
+        <div class="card-body">
+          <p>{{ result }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
